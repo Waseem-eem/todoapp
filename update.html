@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aefbc0ab5js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>update</title>
+    <style>
+        body{
+            background: purple;
+            color: white;
+            display: block;
+        }
+            .updatetodo {
+            background: rgba(92, 5, 80, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+            transform: translate(0%,50%);
+            box-shadow: beige;
+        }
+        .updatetodo input{
+            background:transparent;
+        }
+        .home{
+            margin-top: 250px;
+            text-align: center;
+        }
+        a{
+            margin-top: 150px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            bottom: 0;
+            font-weight: lighter;
+        }
+        a:hover{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="  container my-3 updatetodo">
+        <h3>Update Your Todos Here</h3>
+        <form action="/update/{{todo.sno}}" method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <input type="text" class="form-control " name="title" id="title" value="{{todo.title}}" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label ">Description</label>
+                <input type="text" class="form-control " name="desc" id="desc" value="{{todo.desc}}">
+            </div>
+            <button type="description" class="btn btn-success">Update</button>
+        </form>
+    </div>
+    <div class=" container home">
+        <a href="/">BACK TO HOME</a>
+    </div>
+</body>
+</html>

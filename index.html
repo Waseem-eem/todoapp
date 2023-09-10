@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/aefbc0ab5js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <link rel="icon" type="image/x-icon" href="static/ficon.png">
+
+    <title>TODO</title>
+    <style>
+        body {
+            background-color: white;
+            color: black;
+            font-size: 20px;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        #banner {
+            margin-top: 30px;
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        #logo {
+            background: orange;
+            color: white;
+            border-radius: 5px;
+            font-size: 30px;
+            margin: 7px 20px 0px 20px;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            padding: 0px 3px 15px 2px;
+            font-family: cursive;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            overflow: hidden;
+            background-color: #333;
+
+        }
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .about {
+            margin-right: 10px;
+        }
+
+        .about button {
+            background: transparent;
+            border: 2px solid orange;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bolder;
+            margin-right: 20px;
+            right: 0;
+            margin-top: 6px;
+            padding: 5px;
+            color: orange;
+
+        }
+
+        .about button:hover {
+            color: white;
+            background: orange;
+            border: none;
+        }
+
+        .intro {
+            background: rgb(141, 140, 140, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .benefits {
+            background: rgb(141, 140, 140, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .addtodo {
+            background: rgb(141, 140, 140, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .alert {
+            background: rgb(141, 140, 140, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .view {
+            background: rgb(141, 140, 140, 0.1);
+            text-align: justify;
+            border-radius: 5px;
+            padding: 15px;
+        }
+        .cx {
+            color: white;
+        }
+
+        .footer {
+            background: rgb(8, 8, 8);
+            padding: 50px 0px 50px 0px;
+            bottom: 0px;
+        }
+
+        .footer .social_links ul {
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .footer .social_links i {
+            color: rgb(255, 255, 255);
+            background-color: #087a97;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            margin: 5px;
+            padding: 11px 5px 5px 5px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .footer .social_links p {
+            color: gray;
+            text-align: center;
+            font-size: 14px;
+            margin: 10px 0px 0px 40px;
+        }
+
+        .social_links ul li i:hover {
+            background: rgb(241, 188, 11);
+            color: #fafafd;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="topnav ">
+            <a id="logo" href="#home">W</a>
+            <a href="/">Home</a>
+            <a href="#add">Add </a>
+            <a href="#view">View</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="about">
+            <button onclick="myFunction()">Dark</button>
+        </div>
+    </nav>
+    <!-- banner on top of the page -->
+    <div class="container">
+        <img class="my-3" id="banner" src=" /static/banner.jpg">
+    </div>
+    <!-- about todos -->
+    <div class=" container intro">
+        <h2 class=" ">You should know:</h2>
+        <p>A "To-Do" website is a digital platform designed to help individuals and teams organize their tasks
+            and priorities efficiently. Users can create, manage, and update task lists, ensuring that important
+            assignments are not overlooked. These websites often offer features such as due dates, task
+            categorization, and user-friendly interfaces. With the convenience of accessing tasks from anywhere
+            with an internet connection, a To-Do website streamlines productivity and keeps users on top of
+            their responsibilities, making it an essential tool for staying organized and accomplishing daily
+            goals..</p>
+    </div>
+    <!-- benefits of todos -->
+    <div class="container benefits my-3">
+        <h2>Benefits of a To-Do Website:</h2>
+        <ol>
+            <li> Organizes tasks effectively.</li>
+            <li> Streamlines productivity.</li>
+            <li> Keeps track of deadlines.</li>
+            <li> Helps prioritize important tasks.</li>
+            <li> Enhances time management.</li>
+            <li> Eliminates the risk of forgetting tasks.</li>
+            <li> Provides a centralized task management system.</li>
+            <li> Improves accountability within teams.</li>
+            <li> Notifies users of upcoming deadlines.</li>
+            <li> Supports collaboration on shared tasks.</li>
+        </ol>
+    </div>
+    <!-- add todo form  -->
+    <div id="add" class="  container my-3 addtodo">
+        <h3>Add Your Todos Here</h3>
+        <form action="/" method="POST">
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Title</label>
+                <input type="text" class="form-control " name="title" id="title" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label ">Description</label>
+                <input type="text" class="form-control " name="desc" id="dsce">
+            </div>
+            <button type="description" class="btn btn-success">Submit</button>
+        </form>
+    </div>
+    <!-- alert box -->
+    <div class="container ">
+        {% if alltodo|length == 0 %}
+        <div class="alert alert-info alert" role="alert">
+            No record found please add yours todos
+        </div>
+        {% else %}
+    </div>
+    <!-- todos table -->
+    <div id="view" class="container view">
+        <h2>Your Todos</h2>
+        <table class="table view my-3">
+            <thead>
+                <tr></tr>
+                <th scope="col" class="bg-success p-2 text-white bg-opacity-75 text-center border border-light">Sno.
+                </th>
+                <th scope="col" class="bg-success p-2 text-white bg-opacity-75 text-center border border-light">
+                    Tittle</th>
+                <th scope="col" class="bg-success p-2 text-white bg-opacity-75 text-center border border-light">
+                    Description</th>
+                <th scope="col" class="bg-success p-2 text-white bg-opacity-75 text-center border border-light">
+                    Date&Time</th>
+                <th scope="col" class="bg-success p-2 text-white bg-opacity-75 text-center border border-light">
+                    Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for todo in alltodo %}
+                <tr>
+                    <th class=" cx bg-success p-2 text-dark bg-opacity-25 text-center border border-light ">
+                        {{loop.index}}</th>
+                    <td class=" cx bg-success p-2 text-dark bg-opacity-25 text-center border border-light fw-medium">
+                        {{todo.title}}</td>
+                    <td class=" cx bg-success p-2 text-dark bg-opacity-25 text-center border border-light fw-medium">
+                        {{todo.desc}}</td>
+                    <td class="cx bg-success p-2 text-dark bg-opacity-25 text-center border border-light fw-medium">
+                        {{todo.todo_time}}</td>
+                    <td class=" cx bg-success p-2 text-dark bg-opacity-25 text-center border border-light fw-medium"><a
+                            href="delete/{{todo.sno}}" type="button" class="btn btn-success">Delete</a>
+                        <a href="update/{{todo.sno}}" type="button" class="btn btn-success">Update</button>
+                    </td>
+
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+        {% endif %}
+    </div>
+    <div id="contact" class="footer">
+        <div class="social_links">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <p>Copyright © 2023 <b>Wasimakram</b> Inc. All Rights Reserved.
+            </p>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+           var element = document.body;
+           element.classList.toggle("dark-mode");
+        }
+        </script>
+</body>
+
+</html>
